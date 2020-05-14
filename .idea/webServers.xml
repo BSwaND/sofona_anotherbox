@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3790f411-720d-4e63-911e-64f07e953a1f" name="anotherbox.u.org.ua" url="http://anotherbox.u.org.ua">
+        <fileTransfer host="195.138.64.213" port="21" rootFolder="/www/anotherbox.u.org.ua">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c67615dd-e76a-4656-aa2d-5a5d41f422c8" name="anotherbox.US" url="http://51.79.86.44">
+        <fileTransfer host="51.79.86.44" port="21" rootFolder="/web/anotherbox.us/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

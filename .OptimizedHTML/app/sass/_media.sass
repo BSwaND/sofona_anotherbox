@@ -1,0 +1,252 @@
+@import vars
+
+
+/*==========  Desktop First  ==========*/
+// ≥2000px
+@media screen and (min-width: 2560px)
+	.main-sreen
+		background: url(/images/bg-2560.jpg) no-repeat top
+		background-position-x: center
+		background-color: #f5f5f5
+	.reviews_section:after
+		right: calc(0% - 350px)
+
+
+
+// ≥1560px
+@media screen and (max-width: 1560px)
+	.oiproduct
+		height: calc(100% - 110px)
+		padding: 60px 35px 0
+	.product_inner
+		.jshop_img
+			height: 440px
+			width: 100%
+			object-fit: cover
+	.check_code_block:before, .check_code_item__form:before
+		display: none
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.reviews
+		&_section:after
+			//width: 100%
+			left: 50%
+	.main-sreen
+		background-position-x: center
+	.contact__inner-image
+		display: none
+	.contact__inner-image
+		width: 500px
+		height: 266px
+		left: 210px
+		top: 46px
+	.jshop_list_product .block_product
+		margin: 0 2px
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.menu
+		&_head
+			display: none
+	.header
+		padding: 20px 0 0
+	.hamburger
+		display: block
+		position: absolute
+		right: 0
+	.main-sreen
+		&_block
+			margin-top: 80px
+		.social_block
+			margin-top: 100px
+		&_text
+			margin: 20px 0 40px
+			background: rgba(255, 255, 255, 0.78)
+			border-radius: 13px
+			padding: 20px
+	.slick-carousel_vertikal
+		.slick-dots
+			right: 0
+		&:after
+			display: none
+		&_item-img
+			width: 100%
+			height: 400px
+	.reviews_section
+		min-height: auto
+		&_first-block
+			min-height: auto
+		&:after
+			display: none
+	.about_section, .slick-carousel_vertikal
+		transition: none
+	
+	.scroll-icon
+		display: none
+	
+	.contact_outer-image:before, .main-sreen:before, .main-sreen:after, .about_section:before, .advantages_section:before, .contact_section:after
+		display: none
+	
+	.check
+		&_section
+			background: $bg-grey-6
+			padding-bottom: 0
+			padding-top: 60px
+			margin-top: 120px
+		&_code
+			&_block
+				background-size: contain
+				background-position-y: 101%
+				padding-top: 0px
+				margin-top: 30px
+				&:before
+					display: none
+			&_item
+				padding-left: 0
+				&__form
+					margin: 0
+					&:before
+						display: none
+				&__header
+					transform: translateY(0px)
+					font-weight: 600
+				&__input
+					width: 100%
+				&__img
+					margin-bottom: 30px
+				&__text
+					font-weight: 600
+				&__submit
+					width: 80%
+					margin: auto
+					display: block
+					margin-bottom: 40px
+	
+	.reviews
+		&_slider_item
+			height: auto
+
+	.tab_btn
+		width: 48%
+		display: inline-block !important
+		margin: 5px
+
+	.tab_window_bg
+		height: auto
+	
+	.advantages_bulits_item
+		margin: 10px 0
+		padding: 50px 10px 0
+	
+	.lg-hidden
+		display: block
+		
+	.product_inner .jshop_img
+		//height: 270px
+	.row-fluid .sblock3
+		width: 49%
+		
+	#demo-container
+		display: none
+		opacity: 0
+	.oiproduct
+		height: calc(100% - 60px)
+		padding: 70px 35px 0
+
+// ≥768px
++media-breakpoint-down(sm)
+	.main-sreen
+		background-position-x: left
+		.social_block
+			margin-top: 123px
+			
+	.call-section .btn_white
+		width: 80%
+		margin: auto
+		display: block
+	
+	.tab_window_bg_litle
+		width: 100%
+		height: auto
+		margin: 10px 0
+	.btn_products_section
+		margin: 40px auto 20px
+	
+	.advantages_bulits_item_text
+		opacity: 1
+		position: relative
+		z-index: 1
+	.row-fluid .sblock3
+		width: 100%
+	.product_inner .jshop_img
+		height: auto
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	.main-sreen
+		.social_block
+			margin-top: 123px
+		&_ofther
+			height:  auto
+	.h1_site
+		font-size: 34px
+		line-height: normal
+	.about_products
+		margin-bottom: 0
+	.btn
+		display: block
+		margin-left: auto !important
+		margin-right: auto !important
+	.products_description
+		background-size: contain
+		min-height: auto
+		background-repeat: no-repeat
+	.oiproduct
+		height: calc(100% - 60px)
+		padding: 30px 35px 0
+
+// ≥320px
+@media screen and (max-width: 320px)
+	.oiproduct
+		height: calc(100% - 30px)
+		padding: 20px 35px 0
+	
+	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+
+
+// ≥1400px
+@media screen and (min-width: 1440px)
+	.contact__inner-image
+		width: 500px
+		height: 266px
+		left: 210px
+		top: 46px
+	
+// ≥1560px
+@media screen and (min-width: 1560px)
+	.contact__inner-image
+		width: 615px
+		height: 321px
+		left: 265px
+		top: 64px
+
+		
+//@media screen and (min-width: 2560px)

@@ -1,0 +1,245 @@
+@import vars
+@import fonts
+@import libs
+
+::-webkit-scrollbar
+	width: 5px
+	height: 5px
+::-webkit-scrollbar-track
+	background-color: #999
+::-webkit-scrollbar-track-piece
+	background-color: #ffffff
+::-webkit-scrollbar-thumb
+	height: 50px
+	background-color: $grey
+	border-radius: 3px
+::-webkit-scrollbar-corner
+	background-color: $grey
+::-webkit-resizer
+	background-color: $grey
+
+
+input
+	background: #fff
+	color: $accent
+	font-weight: 500
+	font-size: 16px
+	height: 38px
+	padding: 10px 15px 10px 15px
+	outline: none
+	border: 1px solid $bg-haeder
+	color: $bg-haeder
+	border-radius: 4px
+textarea
+	color: $text !important
+	padding: 10px 15px 10px 15px
+input, textarea
+	transition: all 0.4s
+	outline: none
+	border: 1px solid $bg-haeder
+	color: $bg-haeder
+	&:focus:required:invalid
+		border-color: red
+	&:focus
+		border: 1px solid $accent !important
+	
+@mixin before
+	position: absolute
+	width: 100%
+	height: 100%
+	content: ''
+	top: 0
+	left: 0
+	
+.hamburger
+	//position: absolute
+	//top: 70px
+	//width: 80px
+	//height: 80px
+	//left: 0
+	//z-index: 2
+	display: none
+	text-align: right
+	margin-top: -13px
+
+	
+	
+	
+	
+.btn
+	display: inline-block
+	height: 40px
+	width: 180px
+	line-height: 40px
+	background: $accent
+	color: #fff
+	text-align: center
+	border-radius: 4px
+	text-transform: uppercase
+	margin: 40px 0
+	transition: all 0.4s
+	&:hover
+		background: lighten($accent, 40%)
+	&_white
+		background: #ffffff
+		color: $accent
+		border: 1px solid $accent
+		&:hover
+			color: $accent
+			border: 1px solid rgba(0,0,0,0)
+	&_products_section
+		margin: 120px auto 80px
+		display: block
+	&-buy
+		line-height: 16px
+		font-size: 12px
+	&.button_detail
+		background: #fff !important
+		color: $text
+		border: 1px solid $text-2
+
+.checkout
+	background: $accent
+	height: 40px !important
+	border-radius: 4px
+	padding-top: 9px
+	text-transform: uppercase
+
+.tab_btn
+	background: $bg-grey-1
+	border: 2px solid #fff
+	color: $text
+	font-size: 12px
+	font-weight: 500
+	transition: all 0.4s
+	&:hover
+		background: #fff
+.btn.button_buy, .btn.button_detail
+	width: 49%
+	margin-top: 10px !important
+	margin-left: 0 !important
+	margin-right: 0 !important
+	margin-bottom: 30px !important
+	display: inline-block
+
+.btn.button_buy, .btn.button_detail
+	border-radius: 4px
+	background: $accent
+
+.button.validate
+	line-height: 9px
+	margin: 30px 0
+	font-size: 12px
+			
+.call-section
+	.btn_white
+		width: 320px
+	
+.product_cart
+	.btn_products_section
+		margin: 30px 0
+		font-size: 12px
+
+.button_order_finish
+	background: $green !important
+	border: none
+	color: #fff
+	height: 40px
+	line-height: 40px
+	text-transform: uppercase
+	border-radius: 3px
+	transition: all 0.4s
+	&:hover
+		background:  transparentize($green, 0.3) !important
+
+
+form
+	.btn
+		margin: 0px 0
+		border: none
+		
+		
+		
+@keyframes spin
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)
+
+
+
+
+/*scroll icon animation
+@keyframes scroll-animation
+	0%
+		top: 0
+		opacity: 0
+	30%
+		opacity: 0
+	40%
+		top: 30%
+		opacity: 1
+	70%
+		top: 60%
+		opacity: 0
+	100%
+		opacity: 0
+
+@-moz-keyframes scroll-animation
+	0%
+		top: 0
+		opacity: 0
+	
+	30%
+		opacity: 0
+	
+	40%
+		top: 30%
+		opacity: 1
+	
+	70%
+		top: 60%
+		opacity: 0
+	
+	100%
+		opacity: 0
+
+@-webkit-keyframes scroll-animation
+	0%
+		top: 0
+		opacity: 0
+	
+	30%
+		opacity: 0
+	
+	40%
+		top: 30%
+		opacity: 1
+	
+	70%
+		top: 60%
+		opacity: 0
+	
+	100%
+		opacity: 0
+
+@-ms-keyframes scroll-animation
+	0%
+		top: 0
+		opacity: 0
+	
+	30%
+		opacity: 0
+	
+	40%
+		top: 30%
+		opacity: 1
+	
+	70%
+		top: 60%
+		opacity: 0
+	
+	100%
+		opacity: 0
+
+/*scroll icon animation
